@@ -6,7 +6,8 @@ public class ConnectionFactory {
 	public static Connection getConnection() throws Exception {
 		try {
 // indica qual é o banco de dados que estou utilizando e seu driver
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
 // estabelece a conexao e retorna uma conexao
 			String login = "root";
 			String senha = "";
